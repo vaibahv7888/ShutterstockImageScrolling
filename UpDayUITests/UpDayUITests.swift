@@ -26,9 +26,66 @@ class UpDayUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPicturesDownload() {
+        let app = XCUIApplication()
+        
+        let collectionViewsQuery = app.collectionViews
+        
+        let collectionCell = collectionViewsQuery.children(matching: .cell).element(boundBy: 5)
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: collectionCell, handler: nil)
+        
+        waitForExpectations(timeout: 20, handler: nil)
     }
+    
+    func testCollectionViewScroll() {
+        let app = XCUIApplication()
+        
+        let collectionViewsQuery = app.collectionViews
+        collectionViewsQuery.children(matching: .cell).element(boundBy: 8).otherElements.containing(.activityIndicator, identifier:"Progress halted").element.swipeUp()
+        
+        let cell = collectionViewsQuery.children(matching: .cell).element(boundBy: 10)
+        cell.activityIndicators["Progress halted"].swipeUp()
+        cell.otherElements.containing(.activityIndicator, identifier:"Progress halted").element.swipeUp()
+        
+        let cell25 = collectionViewsQuery.children(matching: .cell).element(boundBy: 21)
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: cell25, handler: nil)
+        
+        waitForExpectations(timeout: 30, handler: nil)
+    }
+    
+    func testShutterPictureFlow() {
+        let app = XCUIApplication()
+        
+        let collectionCellImageView = app.collectionViews.children(matching: .cell).element(boundBy: 5).otherElements.containing(.activityIndicator, identifier:"Progress halted").element
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: collectionCellImageView, handler: nil)
+        
+        waitForExpectations(timeout: 20, handler: nil)
 
+        collectionCellImageView.tap()
+        
+        let shutterPictureView = app.otherElements.containing(.navigationBar, identifier:"UpDay.ShutterPictureView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .image).element
+        
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: shutterPictureView, handler: nil)
+        
+        waitForExpectations(timeout: 10, handler: nil)
+
+        shutterPictureView.tap()
+        
+        let navigationButtonBar = app.navigationBars["UpDay.ShutterPictureView"]
+        XCTAssertFalse(navigationButtonBar.exists)
+        
+        let shutterPictureViewBlack = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .image).element
+        
+        shutterPictureViewBlack.tap()
+        
+        XCTAssertTrue(navigationButtonBar.exists)
+        
+        let backButton = navigationButtonBar.buttons["Shutter Stock"]
+        backButton.tap()
+        
+        XCTAssertTrue(collectionCellImageView.exists)
+    }
 }

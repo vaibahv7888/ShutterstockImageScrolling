@@ -3,12 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DF49396266F236A12042BFA /* Pods_UpDayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF0B95B4BFBF5D67B50E1E /* Pods_UpDayTests.framework */; };
+		A133EF289674555BFA63E072 /* Pods_UpDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A033645976CA73551875C1 /* Pods_UpDay.framework */; };
+		D400FFF922E0A3860028F51F /* FetchImageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400FFF822E0A3850028F51F /* FetchImageContract.swift */; };
+		D400FFFB22E0A4C50028F51F /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400FFFA22E0A4C50028F51F /* FetchImage.swift */; };
+		D41A206322DB971400058CD7 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A206222DB971400058CD7 /* ApplicationAssembly.swift */; };
+		D41A206D22DB9F2700058CD7 /* PicturesCollectionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A206C22DB9F2700058CD7 /* PicturesCollectionAssembly.swift */; };
+		D41A207122DBA22900058CD7 /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207022DBA22900058CD7 /* NetworkAssembly.swift */; };
+		D41A207522DBA2E800058CD7 /* ApiServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207422DBA2E800058CD7 /* ApiServiceContract.swift */; };
+		D41A207722DBA52300058CD7 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207622DBA52300058CD7 /* ApiService.swift */; };
+		D41A207922DBC05C00058CD7 /* ApiContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207822DBC05C00058CD7 /* ApiContract.swift */; };
+		D41A207B22DBC25C00058CD7 /* FetchPicturesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207A22DBC25C00058CD7 /* FetchPicturesApi.swift */; };
+		D41A207D22DBC2A700058CD7 /* FetchPicturesApiContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207C22DBC2A700058CD7 /* FetchPicturesApiContract.swift */; };
+		D41A207F22DBC79F00058CD7 /* FetchPicturesServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A207E22DBC79F00058CD7 /* FetchPicturesServiceContract.swift */; };
+		D41A208122DBC91A00058CD7 /* PicturesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A208022DBC91A00058CD7 /* PicturesList.swift */; };
+		D41A208322DBCE4300058CD7 /* FetchPicturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A208222DBCE4300058CD7 /* FetchPicturesService.swift */; };
+		D41A208522DBD0D400058CD7 /* JSONDecoderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A208422DBD0D400058CD7 /* JSONDecoderContract.swift */; };
+		D41A208722DBD11400058CD7 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A208622DBD11400058CD7 /* JsonDecoder.swift */; };
+		D41EB42322DF79E600657D88 /* PicturesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41EB42222DF79E600657D88 /* PicturesCollectionViewCell.swift */; };
+		D432F14222E0FD1500FA1FDE /* ImageCacheContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14122E0FD1500FA1FDE /* ImageCacheContract.swift */; };
+		D432F14422E0FDE600FA1FDE /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14322E0FDE600FA1FDE /* ImageCache.swift */; };
+		D432F14A22E1025900FA1FDE /* ImageCacheAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14922E1025900FA1FDE /* ImageCacheAssembly.swift */; };
+		D432F14D22E1086600FA1FDE /* FetchImageInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14C22E1086600FA1FDE /* FetchImageInteractorContract.swift */; };
+		D432F14F22E108EB00FA1FDE /* FetchImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */; };
+		D4440F4B22DF4841001D415F /* PicturesViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4440F4A22DF4841001D415F /* PicturesViewModelContract.swift */; };
+		D4440F4D22DF497E001D415F /* PicturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4440F4C22DF497E001D415F /* PicturesViewModel.swift */; };
+		D4C40A4D22E33EC700B341C5 /* AuthenticationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A4C22E33EC700B341C5 /* AuthenticationAssembly.swift */; };
+		D4C40A5522E3522500B341C5 /* ShutterPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5422E3522500B341C5 /* ShutterPictureViewController.swift */; };
+		D4C40A5822E3553E00B341C5 /* ShutterPictureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5722E3553E00B341C5 /* ShutterPictureAssembly.swift */; };
+		D4C40A5A22E3559D00B341C5 /* ShutterPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5922E3559D00B341C5 /* ShutterPictureViewModel.swift */; };
+		D4C40A5C22E355C100B341C5 /* ShutterPictureViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5B22E355C100B341C5 /* ShutterPictureViewModelContract.swift */; };
+		D4C40A6022E357B700B341C5 /* ShutterPictureServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5F22E357B700B341C5 /* ShutterPictureServiceContract.swift */; };
+		D4C40A6222E3580E00B341C5 /* ShutterPictureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A6122E3580E00B341C5 /* ShutterPictureService.swift */; };
+		D4C40A6422E3AF3100B341C5 /* AuthenticationCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4C40A6322E3AF3100B341C5 /* AuthenticationCredentials.plist */; };
+		D4C40A6622E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A6522E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift */; };
+		D4E5369122E4FA51004C42F4 /* TestStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5369022E4FA51004C42F4 /* TestStructures.swift */; };
+		D4E5369522E50111004C42F4 /* SimulatedNteworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5369422E50111004C42F4 /* SimulatedNteworkTest.swift */; };
+		D4E5369722E50FAC004C42F4 /* dataset-one.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E5369622E50FAB004C42F4 /* dataset-one.json */; };
 		D4ECCC0B22DB5E0900968BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC0A22DB5E0900968BDC /* AppDelegate.swift */; };
-		D4ECCC0D22DB5E0900968BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC0C22DB5E0900968BDC /* ViewController.swift */; };
+		D4ECCC0D22DB5E0900968BDC /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC0C22DB5E0900968BDC /* PicturesViewController.swift */; };
 		D4ECCC1022DB5E0900968BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ECCC0E22DB5E0900968BDC /* Main.storyboard */; };
 		D4ECCC1322DB5E0900968BDC /* UpDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC1122DB5E0900968BDC /* UpDay.xcdatamodeld */; };
 		D4ECCC1522DB5E0C00968BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4ECCC1422DB5E0C00968BDC /* Assets.xcassets */; };
@@ -35,9 +72,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		302F5235654C17B974588B25 /* Pods-UpDayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpDayTests.debug.xcconfig"; path = "Target Support Files/Pods-UpDayTests/Pods-UpDayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31A033645976CA73551875C1 /* Pods_UpDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416EE47D122BF52840157EF9 /* Pods-UpDayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpDayTests.release.xcconfig"; path = "Target Support Files/Pods-UpDayTests/Pods-UpDayTests.release.xcconfig"; sourceTree = "<group>"; };
+		50B108555AD692747FE5B9B2 /* Pods-UpDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpDay.release.xcconfig"; path = "Target Support Files/Pods-UpDay/Pods-UpDay.release.xcconfig"; sourceTree = "<group>"; };
+		822787A38594B7EEB63ACF51 /* Pods-UpDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpDay.debug.xcconfig"; path = "Target Support Files/Pods-UpDay/Pods-UpDay.debug.xcconfig"; sourceTree = "<group>"; };
+		D400FFF822E0A3850028F51F /* FetchImageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageContract.swift; sourceTree = "<group>"; };
+		D400FFFA22E0A4C50028F51F /* FetchImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImage.swift; sourceTree = "<group>"; };
+		D41A206222DB971400058CD7 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		D41A206C22DB9F2700058CD7 /* PicturesCollectionAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesCollectionAssembly.swift; sourceTree = "<group>"; };
+		D41A207022DBA22900058CD7 /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		D41A207422DBA2E800058CD7 /* ApiServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceContract.swift; sourceTree = "<group>"; };
+		D41A207622DBA52300058CD7 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D41A207822DBC05C00058CD7 /* ApiContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContract.swift; sourceTree = "<group>"; };
+		D41A207A22DBC25C00058CD7 /* FetchPicturesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesApi.swift; sourceTree = "<group>"; };
+		D41A207C22DBC2A700058CD7 /* FetchPicturesApiContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesApiContract.swift; sourceTree = "<group>"; };
+		D41A207E22DBC79F00058CD7 /* FetchPicturesServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesServiceContract.swift; sourceTree = "<group>"; };
+		D41A208022DBC91A00058CD7 /* PicturesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesList.swift; sourceTree = "<group>"; };
+		D41A208222DBCE4300058CD7 /* FetchPicturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesService.swift; sourceTree = "<group>"; };
+		D41A208422DBD0D400058CD7 /* JSONDecoderContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderContract.swift; sourceTree = "<group>"; };
+		D41A208622DBD11400058CD7 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		D41EB42222DF79E600657D88 /* PicturesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D432F14122E0FD1500FA1FDE /* ImageCacheContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheContract.swift; sourceTree = "<group>"; };
+		D432F14322E0FDE600FA1FDE /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D432F14922E1025900FA1FDE /* ImageCacheAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheAssembly.swift; sourceTree = "<group>"; };
+		D432F14C22E1086600FA1FDE /* FetchImageInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageInteractorContract.swift; sourceTree = "<group>"; };
+		D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageInteractor.swift; sourceTree = "<group>"; };
+		D4440F4A22DF4841001D415F /* PicturesViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewModelContract.swift; sourceTree = "<group>"; };
+		D4440F4C22DF497E001D415F /* PicturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewModel.swift; sourceTree = "<group>"; };
+		D4C40A4C22E33EC700B341C5 /* AuthenticationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAssembly.swift; sourceTree = "<group>"; };
+		D4C40A5422E3522500B341C5 /* ShutterPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureViewController.swift; sourceTree = "<group>"; };
+		D4C40A5722E3553E00B341C5 /* ShutterPictureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureAssembly.swift; sourceTree = "<group>"; };
+		D4C40A5922E3559D00B341C5 /* ShutterPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureViewModel.swift; sourceTree = "<group>"; };
+		D4C40A5B22E355C100B341C5 /* ShutterPictureViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureViewModelContract.swift; sourceTree = "<group>"; };
+		D4C40A5F22E357B700B341C5 /* ShutterPictureServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureServiceContract.swift; sourceTree = "<group>"; };
+		D4C40A6122E3580E00B341C5 /* ShutterPictureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureService.swift; sourceTree = "<group>"; };
+		D4C40A6322E3AF3100B341C5 /* AuthenticationCredentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthenticationCredentials.plist; sourceTree = "<group>"; };
+		D4C40A6522E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAuthenticateTokenContract.swift; sourceTree = "<group>"; };
+		D4E5369022E4FA51004C42F4 /* TestStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStructures.swift; sourceTree = "<group>"; };
+		D4E5369222E4FF6E004C42F4 /* dataset_page1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataset_page1.json; sourceTree = "<group>"; };
+		D4E5369422E50111004C42F4 /* SimulatedNteworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedNteworkTest.swift; sourceTree = "<group>"; };
+		D4E5369622E50FAB004C42F4 /* dataset-one.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dataset-one.json"; sourceTree = "<group>"; };
 		D4ECCC0722DB5E0900968BDC /* UpDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ECCC0A22DB5E0900968BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4ECCC0C22DB5E0900968BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4ECCC0C22DB5E0900968BDC /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 		D4ECCC0F22DB5E0900968BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4ECCC1222DB5E0900968BDC /* UpDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UpDay.xcdatamodel; sourceTree = "<group>"; };
 		D4ECCC1422DB5E0C00968BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +127,7 @@
 		D4ECCC2922DB5E0C00968BDC /* UpDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ECCC2D22DB5E0C00968BDC /* UpDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDayUITests.swift; sourceTree = "<group>"; };
 		D4ECCC2F22DB5E0C00968BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5AF0B95B4BFBF5D67B50E1E /* Pods_UpDayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpDayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A133EF289674555BFA63E072 /* Pods_UpDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF49396266F236A12042BFA /* Pods_UpDayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +157,297 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B00DEC9323F52CD81E9DE428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A033645976CA73551875C1 /* Pods_UpDay.framework */,
+				D5AF0B95B4BFBF5D67B50E1E /* Pods_UpDayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D41A206022DB96D900058CD7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206122DB96F400058CD7 /* DI */,
+				D4ECCC0A22DB5E0900968BDC /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D41A206122DB96F400058CD7 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206222DB971400058CD7 /* ApplicationAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D41A206422DB98CD00058CD7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A4A22E33E9300B341C5 /* Authentication */,
+				D432F14522E101FC00FA1FDE /* ImageCache */,
+				D41A206E22DBA20000058CD7 /* Network */,
+				D41A206522DB98F400058CD7 /* PicturesCollection */,
+				D4C40A5022E3519100B341C5 /* ShutterPicture */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D41A206522DB98F400058CD7 /* PicturesCollection */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206B22DB9DF100058CD7 /* DI */,
+				D41A206722DB9A2200058CD7 /* Presentation */,
+				D41A206622DB9A1900058CD7 /* Model */,
+			);
+			path = PicturesCollection;
+			sourceTree = "<group>";
+		};
+		D41A206622DB9A1900058CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14B22E107CD00FA1FDE /* Interactor */,
+				D41A206A22DB9A4D00058CD7 /* Services */,
+				D41A208022DBC91A00058CD7 /* PicturesList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D41A206722DB9A2200058CD7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206922DB9A3800058CD7 /* ViewModel */,
+				D41A206822DB9A3000058CD7 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D41A206822DB9A3000058CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4ECCC0C22DB5E0900968BDC /* PicturesViewController.swift */,
+				D41EB42222DF79E600657D88 /* PicturesCollectionViewCell.swift */,
+				D4ECCC0E22DB5E0900968BDC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D41A206922DB9A3800058CD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D4440F4A22DF4841001D415F /* PicturesViewModelContract.swift */,
+				D4440F4C22DF497E001D415F /* PicturesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D41A206A22DB9A4D00058CD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D41A207A22DBC25C00058CD7 /* FetchPicturesApi.swift */,
+				D41A207C22DBC2A700058CD7 /* FetchPicturesApiContract.swift */,
+				D41A207E22DBC79F00058CD7 /* FetchPicturesServiceContract.swift */,
+				D41A208222DBCE4300058CD7 /* FetchPicturesService.swift */,
+				D400FFF822E0A3850028F51F /* FetchImageContract.swift */,
+				D400FFFA22E0A4C50028F51F /* FetchImage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D41A206B22DB9DF100058CD7 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206C22DB9F2700058CD7 /* PicturesCollectionAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D41A206E22DBA20000058CD7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D41A206F22DBA21400058CD7 /* DI */,
+				D41A207222DBA27F00058CD7 /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D41A206F22DBA21400058CD7 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D41A207022DBA22900058CD7 /* NetworkAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D41A207222DBA27F00058CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D41A207322DBA28600058CD7 /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D41A207322DBA28600058CD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D41A207422DBA2E800058CD7 /* ApiServiceContract.swift */,
+				D41A207622DBA52300058CD7 /* ApiService.swift */,
+				D41A207822DBC05C00058CD7 /* ApiContract.swift */,
+				D41A208422DBD0D400058CD7 /* JSONDecoderContract.swift */,
+				D41A208622DBD11400058CD7 /* JsonDecoder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D432F14522E101FC00FA1FDE /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14622E1021A00FA1FDE /* DI */,
+				D432F14722E1022100FA1FDE /* Model */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		D432F14622E1021A00FA1FDE /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14922E1025900FA1FDE /* ImageCacheAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D432F14722E1022100FA1FDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14822E1023400FA1FDE /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D432F14822E1023400FA1FDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14122E0FD1500FA1FDE /* ImageCacheContract.swift */,
+				D432F14322E0FDE600FA1FDE /* ImageCache.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D432F14B22E107CD00FA1FDE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D432F14C22E1086600FA1FDE /* FetchImageInteractorContract.swift */,
+				D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D4C40A4A22E33E9300B341C5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A4B22E33EB700B341C5 /* DI */,
+				D4C40A4E22E3439400B341C5 /* Model */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D4C40A4B22E33EB700B341C5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A4C22E33EC700B341C5 /* AuthenticationAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D4C40A4E22E3439400B341C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A6322E3AF3100B341C5 /* AuthenticationCredentials.plist */,
+				D4C40A4F22E343AF00B341C5 /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C40A4F22E343AF00B341C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A6522E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4C40A5022E3519100B341C5 /* ShutterPicture */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5622E3552500B341C5 /* DI */,
+				D4C40A5122E351DC00B341C5 /* Presentaion */,
+				D4C40A5D22E3573E00B341C5 /* Model */,
+			);
+			path = ShutterPicture;
+			sourceTree = "<group>";
+		};
+		D4C40A5122E351DC00B341C5 /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5322E351FC00B341C5 /* ViewModel */,
+				D4C40A5222E351F200B341C5 /* View */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		D4C40A5222E351F200B341C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5422E3522500B341C5 /* ShutterPictureViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C40A5322E351FC00B341C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5922E3559D00B341C5 /* ShutterPictureViewModel.swift */,
+				D4C40A5B22E355C100B341C5 /* ShutterPictureViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D4C40A5622E3552500B341C5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5722E3553E00B341C5 /* ShutterPictureAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D4C40A5D22E3573E00B341C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5E22E3574E00B341C5 /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C40A5E22E3574E00B341C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4C40A5F22E357B700B341C5 /* ShutterPictureServiceContract.swift */,
+				D4C40A6122E3580E00B341C5 /* ShutterPictureService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4E5369322E4FF73004C42F4 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				D4E5369622E50FAB004C42F4 /* dataset-one.json */,
+				D4E5369222E4FF6E004C42F4 /* dataset_page1.json */,
+			);
+			path = "Test Data";
+			sourceTree = "<group>";
+		};
 		D4ECCBFE22DB5E0900968BDC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +455,8 @@
 				D4ECCC2122DB5E0C00968BDC /* UpDayTests */,
 				D4ECCC2C22DB5E0C00968BDC /* UpDayUITests */,
 				D4ECCC0822DB5E0900968BDC /* Products */,
+				F947DDDD8E386A03BBBD8A81 /* Pods */,
+				B00DEC9323F52CD81E9DE428 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +473,8 @@
 		D4ECCC0922DB5E0900968BDC /* UpDay */ = {
 			isa = PBXGroup;
 			children = (
-				D4ECCC0A22DB5E0900968BDC /* AppDelegate.swift */,
-				D4ECCC0C22DB5E0900968BDC /* ViewController.swift */,
-				D4ECCC0E22DB5E0900968BDC /* Main.storyboard */,
+				D41A206022DB96D900058CD7 /* AppDelegate */,
+				D41A206422DB98CD00058CD7 /* Features */,
 				D4ECCC1422DB5E0C00968BDC /* Assets.xcassets */,
 				D4ECCC1622DB5E0C00968BDC /* LaunchScreen.storyboard */,
 				D4ECCC1922DB5E0C00968BDC /* Info.plist */,
@@ -113,8 +486,11 @@
 		D4ECCC2122DB5E0C00968BDC /* UpDayTests */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5369322E4FF73004C42F4 /* Test Data */,
 				D4ECCC2222DB5E0C00968BDC /* UpDayTests.swift */,
 				D4ECCC2422DB5E0C00968BDC /* Info.plist */,
+				D4E5369022E4FA51004C42F4 /* TestStructures.swift */,
+				D4E5369422E50111004C42F4 /* SimulatedNteworkTest.swift */,
 			);
 			path = UpDayTests;
 			sourceTree = "<group>";
@@ -128,6 +504,17 @@
 			path = UpDayUITests;
 			sourceTree = "<group>";
 		};
+		F947DDDD8E386A03BBBD8A81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				822787A38594B7EEB63ACF51 /* Pods-UpDay.debug.xcconfig */,
+				50B108555AD692747FE5B9B2 /* Pods-UpDay.release.xcconfig */,
+				302F5235654C17B974588B25 /* Pods-UpDayTests.debug.xcconfig */,
+				416EE47D122BF52840157EF9 /* Pods-UpDayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +522,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4ECCC3222DB5E0C00968BDC /* Build configuration list for PBXNativeTarget "UpDay" */;
 			buildPhases = (
+				3B7F376357EDDA7F7E174BFE /* [CP] Check Pods Manifest.lock */,
 				D4ECCC0322DB5E0900968BDC /* Sources */,
 				D4ECCC0422DB5E0900968BDC /* Frameworks */,
 				D4ECCC0522DB5E0900968BDC /* Resources */,
+				A9558131532D52E634DDA2E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +541,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4ECCC3522DB5E0C00968BDC /* Build configuration list for PBXNativeTarget "UpDayTests" */;
 			buildPhases = (
+				A11A14DF82FF91054A37ECBC /* [CP] Check Pods Manifest.lock */,
 				D4ECCC1A22DB5E0C00968BDC /* Sources */,
 				D4ECCC1B22DB5E0C00968BDC /* Frameworks */,
 				D4ECCC1C22DB5E0C00968BDC /* Resources */,
+				6CC345D7EFFA8B311D81FD08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +626,7 @@
 				D4ECCC1822DB5E0C00968BDC /* LaunchScreen.storyboard in Resources */,
 				D4ECCC1522DB5E0C00968BDC /* Assets.xcassets in Resources */,
 				D4ECCC1022DB5E0900968BDC /* Main.storyboard in Resources */,
+				D4C40A6422E3AF3100B341C5 /* AuthenticationCredentials.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +634,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E5369722E50FAC004C42F4 /* dataset-one.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +647,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B7F376357EDDA7F7E174BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC345D7EFFA8B311D81FD08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpDayTests/Pods-UpDayTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpDayTests/Pods-UpDayTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpDayTests/Pods-UpDayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11A14DF82FF91054A37ECBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpDayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9558131532D52E634DDA2E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpDay/Pods-UpDay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpDay/Pods-UpDay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpDay/Pods-UpDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4ECCC0322DB5E0900968BDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4ECCC0D22DB5E0900968BDC /* ViewController.swift in Sources */,
+				D41A207B22DBC25C00058CD7 /* FetchPicturesApi.swift in Sources */,
+				D41A206322DB971400058CD7 /* ApplicationAssembly.swift in Sources */,
+				D432F14A22E1025900FA1FDE /* ImageCacheAssembly.swift in Sources */,
+				D4C40A6622E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift in Sources */,
+				D400FFF922E0A3860028F51F /* FetchImageContract.swift in Sources */,
+				D4ECCC0D22DB5E0900968BDC /* PicturesViewController.swift in Sources */,
+				D4C40A5822E3553E00B341C5 /* ShutterPictureAssembly.swift in Sources */,
+				D41A208322DBCE4300058CD7 /* FetchPicturesService.swift in Sources */,
+				D432F14F22E108EB00FA1FDE /* FetchImageInteractor.swift in Sources */,
+				D41A207122DBA22900058CD7 /* NetworkAssembly.swift in Sources */,
+				D4440F4B22DF4841001D415F /* PicturesViewModelContract.swift in Sources */,
 				D4ECCC1322DB5E0900968BDC /* UpDay.xcdatamodeld in Sources */,
+				D4C40A5C22E355C100B341C5 /* ShutterPictureViewModelContract.swift in Sources */,
+				D4440F4D22DF497E001D415F /* PicturesViewModel.swift in Sources */,
+				D4C40A6022E357B700B341C5 /* ShutterPictureServiceContract.swift in Sources */,
+				D41A207F22DBC79F00058CD7 /* FetchPicturesServiceContract.swift in Sources */,
+				D4C40A5A22E3559D00B341C5 /* ShutterPictureViewModel.swift in Sources */,
+				D432F14D22E1086600FA1FDE /* FetchImageInteractorContract.swift in Sources */,
+				D41A207522DBA2E800058CD7 /* ApiServiceContract.swift in Sources */,
+				D41A206D22DB9F2700058CD7 /* PicturesCollectionAssembly.swift in Sources */,
+				D4C40A4D22E33EC700B341C5 /* AuthenticationAssembly.swift in Sources */,
+				D41A207722DBA52300058CD7 /* ApiService.swift in Sources */,
+				D41A208522DBD0D400058CD7 /* JSONDecoderContract.swift in Sources */,
+				D400FFFB22E0A4C50028F51F /* FetchImage.swift in Sources */,
+				D432F14422E0FDE600FA1FDE /* ImageCache.swift in Sources */,
+				D41A207922DBC05C00058CD7 /* ApiContract.swift in Sources */,
+				D41A208722DBD11400058CD7 /* JsonDecoder.swift in Sources */,
+				D41A208122DBC91A00058CD7 /* PicturesList.swift in Sources */,
+				D432F14222E0FD1500FA1FDE /* ImageCacheContract.swift in Sources */,
 				D4ECCC0B22DB5E0900968BDC /* AppDelegate.swift in Sources */,
+				D4C40A5522E3522500B341C5 /* ShutterPictureViewController.swift in Sources */,
+				D41A207D22DBC2A700058CD7 /* FetchPicturesApiContract.swift in Sources */,
+				D4C40A6222E3580E00B341C5 /* ShutterPictureService.swift in Sources */,
+				D41EB42322DF79E600657D88 /* PicturesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +774,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E5369522E50111004C42F4 /* SimulatedNteworkTest.swift in Sources */,
 				D4ECCC2322DB5E0C00968BDC /* UpDayTests.swift in Sources */,
+				D4E5369122E4FA51004C42F4 /* TestStructures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +941,7 @@
 		};
 		D4ECCC3322DB5E0C00968BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822787A38594B7EEB63ACF51 /* Pods-UpDay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +960,7 @@
 		};
 		D4ECCC3422DB5E0C00968BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B108555AD692747FE5B9B2 /* Pods-UpDay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +979,7 @@
 		};
 		D4ECCC3622DB5E0C00968BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302F5235654C17B974588B25 /* Pods-UpDayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +1001,7 @@
 		};
 		D4ECCC3722DB5E0C00968BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416EE47D122BF52840157EF9 /* Pods-UpDayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

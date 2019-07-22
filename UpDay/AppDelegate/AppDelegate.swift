@@ -8,13 +8,25 @@
 
 import UIKit
 import CoreData
+import Swinject
+import SwinjectAutoregistration
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let baseAssembler = Assembler([ApplicationAssembly(),
+                                            NetworkAssembly(),
+                                            ImageCacheAssembly()])
 
+    static var applicationAssembler: Assembler? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+        }
+        return appDelegate.baseAssembler
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
