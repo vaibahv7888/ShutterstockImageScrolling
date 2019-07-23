@@ -50,11 +50,11 @@ struct ApiService : ApiServiceContract {
         Alamofire.request(url, method: method, parameters: queryParameters, headers: httpHeaders)
             .validate()
             .response { response in
-                if let data = response.data {
-                    Completion(data)
-                } else {
-                    print("Error")
+                guard let data = response.data else {
+                    Completion(nil)
+                    return
                 }
+                Completion(data)
         }
     }
     
