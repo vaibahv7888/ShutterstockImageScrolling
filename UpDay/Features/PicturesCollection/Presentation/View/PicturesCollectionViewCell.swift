@@ -10,22 +10,15 @@ import UIKit
 
 class PicturesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var PictureImageView: UIImageView!
-    @IBOutlet weak var heightLbl: UILabel!
-    @IBOutlet weak var widthLbl: UILabel!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     weak var picturesViewModel : PicturesViewModel?
     
-    var height : Int = 0
-    var width : Int = 0
-    var imageUrl : String = ""
     var pictureAsset : Asset?
     var imageRequest : ImageRequest?
     
     func configure(pictureVM: PicturesViewModel, picture: Asset) {
         self.pictureAsset = picture
-        self.heightLbl.isHidden = true
-        self.widthLbl.isHidden = true
         self.picturesViewModel = pictureVM
         resetCell()
         downloadImage()

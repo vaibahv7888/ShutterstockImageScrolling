@@ -36,38 +36,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TJb-Hu-7W5">
-                                                    <rect key="frame" x="55" y="55" width="40" height="40"/>
+                                                    <rect key="frame" x="63" y="56" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Wm1-b5-grY"/>
                                                         <constraint firstAttribute="width" constant="40" id="iZi-8y-gWf"/>
                                                     </constraints>
                                                 </activityIndicatorView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rpm-l2-n31" userLabel="Picture">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="152"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cT-3R-cBk" userLabel="height">
-                                                    <rect key="frame" x="20" y="20" width="110" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPS-mc-amy" userLabel="width">
-                                                    <rect key="frame" x="20" y="109" width="110" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="yPS-mc-amy" firstAttribute="leading" secondItem="0dF-7z-6ZB" secondAttribute="leading" constant="20" id="6R5-pE-H7p"/>
-                                            <constraint firstItem="9cT-3R-cBk" firstAttribute="top" secondItem="0dF-7z-6ZB" secondAttribute="top" constant="20" id="Dh5-uh-gEA"/>
-                                            <constraint firstAttribute="trailing" secondItem="yPS-mc-amy" secondAttribute="trailing" constant="20" id="JPK-SJ-xkh"/>
                                             <constraint firstItem="Rpm-l2-n31" firstAttribute="top" secondItem="0dF-7z-6ZB" secondAttribute="top" id="LvE-R1-1o9"/>
                                             <constraint firstAttribute="bottom" secondItem="Rpm-l2-n31" secondAttribute="bottom" id="VWQ-3F-B9e"/>
-                                            <constraint firstAttribute="bottom" secondItem="yPS-mc-amy" secondAttribute="bottom" constant="20" id="eS6-ZK-rAC"/>
-                                            <constraint firstAttribute="trailing" secondItem="9cT-3R-cBk" secondAttribute="trailing" constant="20" id="i3x-Br-yTp"/>
-                                            <constraint firstItem="9cT-3R-cBk" firstAttribute="leading" secondItem="0dF-7z-6ZB" secondAttribute="leading" constant="20" id="oKD-Gj-oeb"/>
                                             <constraint firstItem="Rpm-l2-n31" firstAttribute="leading" secondItem="0dF-7z-6ZB" secondAttribute="leading" id="oV8-03-Q5W"/>
                                             <constraint firstItem="TJb-Hu-7W5" firstAttribute="centerY" secondItem="0dF-7z-6ZB" secondAttribute="centerY" id="qxS-h5-OIO"/>
                                             <constraint firstAttribute="trailing" secondItem="Rpm-l2-n31" secondAttribute="trailing" id="udP-iI-w9I"/>
@@ -75,9 +57,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="PictureImageView" destination="Rpm-l2-n31" id="cuD-fl-qLd"/>
-                                            <outlet property="heightLbl" destination="9cT-3R-cBk" id="lbs-P5-aUf"/>
                                             <outlet property="loadingIndicator" destination="TJb-Hu-7W5" id="GLQ-Zk-7kg"/>
-                                            <outlet property="widthLbl" destination="yPS-mc-amy" id="o2k-nd-Jj3"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
