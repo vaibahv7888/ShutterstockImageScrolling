@@ -90,7 +90,7 @@ class SimulatedNteworkTest: XCTestCase {
 
     func testPage1() {
         let fetcher = container ~> (FetchPicturesService.self, name:"dataset-one")
-        let expectation = XCTestExpectation(description: "Fetch Bitcoin price from dataset one")
+        let expectation = XCTestExpectation(description: "Fetch Search Id from dataset one")
         
         fetcher.fetchPictures(pageIndex: 1, completion: { (response) in
             guard let res = response else {
