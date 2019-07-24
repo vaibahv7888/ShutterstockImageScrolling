@@ -9,8 +9,7 @@
 import UIKit
 
 class ShutterPictureViewModel : ShutterPictureViewModelContract {
-    
-    var shutterPictureService : ShutterPictureServiceContract!
+    let shutterPictureService : ShutterPictureServiceContract!
     
     init(shutterPictureService:ShutterPictureServiceContract) {
         self.shutterPictureService = shutterPictureService

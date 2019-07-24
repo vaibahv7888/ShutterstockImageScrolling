@@ -11,7 +11,6 @@ import Swinject
 import SwinjectAutoregistration
 
 class ShutterPictureViewController: UIViewController {
-    
     private let shutterPictureAssembler = Assembler([ShutterPictureAssembly()],
                                               parent: AppDelegate.applicationAssembler)
     private var shutterPictureViewModel : ShutterPictureViewModelContract!
@@ -51,7 +50,6 @@ class ShutterPictureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.shutterPictureViewModel = self.shutterPictureAssembler.resolver.resolve(ShutterPictureViewModelContract.self)
         setUpViews()
         loadImage()

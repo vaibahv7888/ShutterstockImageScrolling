@@ -7,6 +7,7 @@ target 'UpDay' do
   pod 'Swinject'
   pod 'SwinjectAutoregistration', '2.1.1'
   pod 'AlamofireImage', '~> 3.5'
+  pod 'SwiftKeychainWrapper'
   
   target 'UpDayTests' do
     inherit! :search_paths

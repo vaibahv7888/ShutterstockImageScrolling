@@ -11,13 +11,27 @@ import UIKit
 class PicturesViewModel : PicturesViewModelContract {
     let fetchPicturesService : FetchPicturesServiceContract!
     let fetchImageInteractor : FetchImageInteractorContract!
-
+    let authenticationTokenInteractor : AuthenticationTokenInteractorContract
+    
     var picturesListData = [PictureData]()
     var pageIndex = 0
 
-    init(fetchPictures:FetchPicturesServiceContract, fetchImageRepository:FetchImageInteractorContract) {
+    init(fetchPictures:FetchPicturesServiceContract,
+         fetchImageRepository:FetchImageInteractorContract,
+         authenticationTokenInteractor : AuthenticationTokenInteractorContract) {
         self.fetchPicturesService = fetchPictures
         self.fetchImageInteractor = fetchImageRepository
+        self.authenticationTokenInteractor = authenticationTokenInteractor
+    }
+    
+    func getAuthenticationToken(completion:@escaping (Bool)->Void) {
+        self.authenticationTokenInteractor.getAuthenticationToken { (response) in
+            guard let token = response else {
+                completion(false)
+                return
+            }
+            completion(true)
+        }
     }
     
     func getNumberOfItemsInSection() -> Int {

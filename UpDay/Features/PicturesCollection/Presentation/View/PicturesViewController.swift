@@ -24,7 +24,19 @@ class PicturesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.picturesViewModel = self.picturesAssembler.resolver.resolve(PicturesViewModelContract.self)
-        self.refreshImages()
+        self.getAuthenticationToken()
+    }
+    
+    func getAuthenticationToken() {
+        DispatchQueue.global(qos: .background).async {
+            self.picturesViewModel.getAuthenticationToken(completion: { (response) in
+                DispatchQueue.main.async {
+                    if response {
+                        self.refreshImages()
+                    }
+                }
+            })
+        }
     }
     
     func refreshImages() {

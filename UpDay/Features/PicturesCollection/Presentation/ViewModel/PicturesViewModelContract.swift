@@ -10,6 +10,7 @@ import UIKit
 
 protocol PicturesViewModelContract {
     var pageIndex:Int { get set }
+    func getAuthenticationToken(completion:@escaping (Bool)->Void)
     func getNumberOfItemsInSection() -> Int
     func getLargeThumnailsPicture(for index:Int) -> Asset?
     func getPreview1000(for index:Int) -> Asset?

@@ -9,9 +9,8 @@
 import UIKit
 
 struct FetchImageInteractor : FetchImageInteractorContract {
-    
-    var fetchImage : FetchImageContract!
-    var imageCache : ImageCacheContract!
+    let fetchImage : FetchImageContract!
+    let imageCache : ImageCacheContract!
     
     init(fetchImage:FetchImageContract, imageCache:ImageCacheContract) {
         self.fetchImage = fetchImage

@@ -9,9 +9,8 @@
 import Foundation
 
 struct FetchPicturesService : FetchPicturesServiceContract {
-    
-    var fetchPicturesApi : FetchPicturesApiContract!
-    var decoder : JSONDecoderContract!
+    let fetchPicturesApi : FetchPicturesApiContract!
+    let decoder : JSONDecoderContract!
     
     init(fetchPicturesApi : FetchPicturesApiContract, decoder : JSONDecoderContract) {
         self.fetchPicturesApi = fetchPicturesApi
@@ -24,7 +23,6 @@ struct FetchPicturesService : FetchPicturesServiceContract {
                 completion(nil)
                 return
             }
-            
             completion(picturesList)
         })
     }

@@ -56,6 +56,14 @@ struct SimulatedDecoder : JSONDecoderContract {
     }
 }
 
+struct SimulatedFetchPicturesApi : FetchPicturesApiContract {
+    let apiService : ApiServiceContract
+    func fetchPictures(pageIndex: Int, completion: @escaping (Data?) -> Void) {
+        self.apiService.get(nil, authenticationRequired: false, queryParameters: nil, httpHeaders: nil) { (response) in
+            completion(response)
+        }
+    }
+}
 
 class SimulatedNteworkTest: XCTestCase {
     let container = Container()
@@ -68,7 +76,7 @@ class SimulatedNteworkTest: XCTestCase {
         
         container.autoregister(FetchPicturesApiContract.self,
                                argument: ApiServiceContract.self,
-                               initializer: FetchPicturesApi.init(apiService:))
+                               initializer: SimulatedFetchPicturesApi.init(apiService:))
         
         container.autoregister(JSONDecoderContract.self,
                                argument: JSONDecoder.self,
@@ -101,15 +109,5 @@ class SimulatedNteworkTest: XCTestCase {
             XCTAssertEqual("P2wi6AOO88769Hzvw9M0mg", res.search_id)
             expectation.fulfill()
         })
-        
-        
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

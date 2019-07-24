@@ -18,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private let baseAssembler = Assembler([ApplicationAssembly(),
                                             NetworkAssembly(),
-                                            ImageCacheAssembly()])
+                                            ImageCacheAssembly(),
+                                            CommonAssembly(),
+                                            AuthenticationAssembly(),
+                                            KeyChainAccessAssembly()])
 
     static var applicationAssembler: Assembler? {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {

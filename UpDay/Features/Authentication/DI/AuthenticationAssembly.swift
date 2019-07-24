@@ -12,6 +12,9 @@ import SwinjectAutoregistration
 
 class AuthenticationAssembly : Assembly {
     func assemble(container: Container) {
-        
+        container.autoregister(AuthenticationTokenInteractorContract.self, initializer: AuthenticationTokenInteractor.init)
+        container.autoregister(FetchAuthenticateTokenContract.self, initializer: FetchAuthenticateToken.init)
+        container.autoregister(AuthenticationTokenApiContract.self, initializer: AuthenticationTokenApi.init)
+        container.autoregister(GetConstantTokenContract.self, initializer: GetConstantToken.init)
     }
 }

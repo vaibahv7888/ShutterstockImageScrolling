@@ -16,7 +16,6 @@ extension UInt64 {
 }
 
 struct ImageCache : ImageCacheContract {
-    
     private let imageCache = AutoPurgingImageCache(
         memoryCapacity: UInt64(100).megabytes(),
         preferredMemoryUsageAfterPurge: UInt64(60).megabytes()

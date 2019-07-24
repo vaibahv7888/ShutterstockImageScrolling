@@ -9,7 +9,6 @@
 import UIKit
 
 struct ShutterPictureService : ShutterPictureServiceContract {
-    
     var apiService : ApiServiceContract!
     
     init(apiService:ApiServiceContract) {

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol FetchAuthenticateTokenContract {
-    func fetchAuthenticateToken(completion: @escaping (String?)->Void)
+    func fetchAuthenticateToken(completion: @escaping (AccessToken?)->Void)
 }

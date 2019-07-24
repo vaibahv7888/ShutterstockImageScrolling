@@ -32,6 +32,18 @@
 		D432F14F22E108EB00FA1FDE /* FetchImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */; };
 		D4440F4B22DF4841001D415F /* PicturesViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4440F4A22DF4841001D415F /* PicturesViewModelContract.swift */; };
 		D4440F4D22DF497E001D415F /* PicturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4440F4C22DF497E001D415F /* PicturesViewModel.swift */; };
+		D47610F522E63B4200B038AE /* ApiEndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47610F422E63B4200B038AE /* ApiEndPoints.plist */; };
+		D47610F822E63C4E00B038AE /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610F722E63C4E00B038AE /* ApiEndPoint.swift */; };
+		D47610FA22E63D8400B038AE /* URL+PathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610F922E63D8400B038AE /* URL+PathExtension.swift */; };
+		D47610FC22E63FF200B038AE /* ApiEndPointProviderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610FB22E63FF200B038AE /* ApiEndPointProviderContract.swift */; };
+		D47610FE22E640C900B038AE /* ApiEndPointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610FD22E640C900B038AE /* ApiEndPointProvider.swift */; };
+		D476110022E647AF00B038AE /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610FF22E647AF00B038AE /* CommonAssembly.swift */; };
+		D476110222E6504E00B038AE /* FetchAuthenticateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D476110122E6504E00B038AE /* FetchAuthenticateToken.swift */; };
+		D476110422E650EA00B038AE /* ReadPListFileContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D476110322E650EA00B038AE /* ReadPListFileContract.swift */; };
+		D476110622E6515D00B038AE /* ReadPListFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D476110522E6515D00B038AE /* ReadPListFile.swift */; };
+		D476110822E6543900B038AE /* AuthenticationCredentialsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D476110722E6543900B038AE /* AuthenticationCredentialsEndPoint.swift */; };
+		D48D794022E840F400B9BE70 /* GetConstantTokenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D793F22E840F400B9BE70 /* GetConstantTokenContract.swift */; };
+		D48D794322E8414300B9BE70 /* GetConstantToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D794222E8414300B9BE70 /* GetConstantToken.swift */; };
 		D4C40A4D22E33EC700B341C5 /* AuthenticationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A4C22E33EC700B341C5 /* AuthenticationAssembly.swift */; };
 		D4C40A5522E3522500B341C5 /* ShutterPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5422E3522500B341C5 /* ShutterPictureViewController.swift */; };
 		D4C40A5822E3553E00B341C5 /* ShutterPictureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C40A5722E3553E00B341C5 /* ShutterPictureAssembly.swift */; };
@@ -52,6 +64,16 @@
 		D4ECCC1822DB5E0C00968BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ECCC1622DB5E0C00968BDC /* LaunchScreen.storyboard */; };
 		D4ECCC2322DB5E0C00968BDC /* UpDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC2222DB5E0C00968BDC /* UpDayTests.swift */; };
 		D4ECCC2E22DB5E0C00968BDC /* UpDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ECCC2D22DB5E0C00968BDC /* UpDayUITests.swift */; };
+		D4F3F66E22E6E59A003BB6DA /* AuthenticationTokenApiContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F66D22E6E59A003BB6DA /* AuthenticationTokenApiContract.swift */; };
+		D4F3F67022E6E617003BB6DA /* AuthenticationTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F66F22E6E617003BB6DA /* AuthenticationTokenApi.swift */; };
+		D4F3F67222E6EF2D003BB6DA /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67122E6EF2D003BB6DA /* AccessToken.swift */; };
+		D4F3F67522E6F092003BB6DA /* AuthenticationTokenInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67422E6F092003BB6DA /* AuthenticationTokenInteractorContract.swift */; };
+		D4F3F67722E6F0F3003BB6DA /* AuthenticationTokenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67622E6F0F3003BB6DA /* AuthenticationTokenInteractor.swift */; };
+		D4F3F67C22E6F2F1003BB6DA /* KeyChainAccessAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67B22E6F2F1003BB6DA /* KeyChainAccessAssembly.swift */; };
+		D4F3F67E22E6F37E003BB6DA /* KeyChainAccessContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67D22E6F37E003BB6DA /* KeyChainAccessContract.swift */; };
+		D4F3F68022E6F4C3003BB6DA /* KeyChainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F67F22E6F4C3003BB6DA /* KeyChainAccess.swift */; };
+		D4F3F68222E70F10003BB6DA /* FetchPicturesInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F68122E70F10003BB6DA /* FetchPicturesInteractorContract.swift */; };
+		D4F3F68422E70F5E003BB6DA /* FetchPicturesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3F68322E70F5E003BB6DA /* FetchPicturesInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +122,18 @@
 		D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageInteractor.swift; sourceTree = "<group>"; };
 		D4440F4A22DF4841001D415F /* PicturesViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewModelContract.swift; sourceTree = "<group>"; };
 		D4440F4C22DF497E001D415F /* PicturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewModel.swift; sourceTree = "<group>"; };
+		D47610F422E63B4200B038AE /* ApiEndPoints.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiEndPoints.plist; sourceTree = "<group>"; };
+		D47610F722E63C4E00B038AE /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		D47610F922E63D8400B038AE /* URL+PathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+PathExtension.swift"; sourceTree = "<group>"; };
+		D47610FB22E63FF200B038AE /* ApiEndPointProviderContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPointProviderContract.swift; sourceTree = "<group>"; };
+		D47610FD22E640C900B038AE /* ApiEndPointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPointProvider.swift; sourceTree = "<group>"; };
+		D47610FF22E647AF00B038AE /* CommonAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
+		D476110122E6504E00B038AE /* FetchAuthenticateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAuthenticateToken.swift; sourceTree = "<group>"; };
+		D476110322E650EA00B038AE /* ReadPListFileContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadPListFileContract.swift; sourceTree = "<group>"; };
+		D476110522E6515D00B038AE /* ReadPListFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadPListFile.swift; sourceTree = "<group>"; };
+		D476110722E6543900B038AE /* AuthenticationCredentialsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCredentialsEndPoint.swift; sourceTree = "<group>"; };
+		D48D793F22E840F400B9BE70 /* GetConstantTokenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetConstantTokenContract.swift; sourceTree = "<group>"; };
+		D48D794222E8414300B9BE70 /* GetConstantToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetConstantToken.swift; sourceTree = "<group>"; };
 		D4C40A4C22E33EC700B341C5 /* AuthenticationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAssembly.swift; sourceTree = "<group>"; };
 		D4C40A5422E3522500B341C5 /* ShutterPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureViewController.swift; sourceTree = "<group>"; };
 		D4C40A5722E3553E00B341C5 /* ShutterPictureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterPictureAssembly.swift; sourceTree = "<group>"; };
@@ -127,6 +161,16 @@
 		D4ECCC2922DB5E0C00968BDC /* UpDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ECCC2D22DB5E0C00968BDC /* UpDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDayUITests.swift; sourceTree = "<group>"; };
 		D4ECCC2F22DB5E0C00968BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F3F66D22E6E59A003BB6DA /* AuthenticationTokenApiContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenApiContract.swift; sourceTree = "<group>"; };
+		D4F3F66F22E6E617003BB6DA /* AuthenticationTokenApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenApi.swift; sourceTree = "<group>"; };
+		D4F3F67122E6EF2D003BB6DA /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		D4F3F67422E6F092003BB6DA /* AuthenticationTokenInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenInteractorContract.swift; sourceTree = "<group>"; };
+		D4F3F67622E6F0F3003BB6DA /* AuthenticationTokenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenInteractor.swift; sourceTree = "<group>"; };
+		D4F3F67B22E6F2F1003BB6DA /* KeyChainAccessAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAccessAssembly.swift; sourceTree = "<group>"; };
+		D4F3F67D22E6F37E003BB6DA /* KeyChainAccessContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAccessContract.swift; sourceTree = "<group>"; };
+		D4F3F67F22E6F4C3003BB6DA /* KeyChainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAccess.swift; sourceTree = "<group>"; };
+		D4F3F68122E70F10003BB6DA /* FetchPicturesInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesInteractorContract.swift; sourceTree = "<group>"; };
+		D4F3F68322E70F5E003BB6DA /* FetchPicturesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPicturesInteractor.swift; sourceTree = "<group>"; };
 		D5AF0B95B4BFBF5D67B50E1E /* Pods_UpDayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpDayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,7 +230,9 @@
 		D41A206422DB98CD00058CD7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D4F3F67822E6F29A003BB6DA /* KeyChainAccess */,
 				D4C40A4A22E33E9300B341C5 /* Authentication */,
+				D47610F122E63ABC00B038AE /* Common */,
 				D432F14522E101FC00FA1FDE /* ImageCache */,
 				D41A206E22DBA20000058CD7 /* Network */,
 				D41A206522DB98F400058CD7 /* PicturesCollection */,
@@ -297,6 +343,7 @@
 				D41A207822DBC05C00058CD7 /* ApiContract.swift */,
 				D41A208422DBD0D400058CD7 /* JSONDecoderContract.swift */,
 				D41A208622DBD11400058CD7 /* JsonDecoder.swift */,
+				D47610F922E63D8400B038AE /* URL+PathExtension.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -340,8 +387,48 @@
 			children = (
 				D432F14C22E1086600FA1FDE /* FetchImageInteractorContract.swift */,
 				D432F14E22E108EB00FA1FDE /* FetchImageInteractor.swift */,
+				D4F3F68122E70F10003BB6DA /* FetchPicturesInteractorContract.swift */,
+				D4F3F68322E70F5E003BB6DA /* FetchPicturesInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D47610F122E63ABC00B038AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D47610F222E63AC500B038AE /* DI */,
+				D47610F322E63AE300B038AE /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D47610F222E63AC500B038AE /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D47610FF22E647AF00B038AE /* CommonAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D47610F322E63AE300B038AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D47610F622E63C3400B038AE /* Services */,
+				D47610F422E63B4200B038AE /* ApiEndPoints.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D47610F622E63C3400B038AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D47610F722E63C4E00B038AE /* ApiEndPoint.swift */,
+				D47610FB22E63FF200B038AE /* ApiEndPointProviderContract.swift */,
+				D47610FD22E640C900B038AE /* ApiEndPointProvider.swift */,
+				D476110322E650EA00B038AE /* ReadPListFileContract.swift */,
+				D476110522E6515D00B038AE /* ReadPListFile.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D4C40A4A22E33E9300B341C5 /* Authentication */ = {
@@ -364,8 +451,10 @@
 		D4C40A4E22E3439400B341C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4F3F67322E6F055003BB6DA /* Interactor */,
 				D4C40A6322E3AF3100B341C5 /* AuthenticationCredentials.plist */,
 				D4C40A4F22E343AF00B341C5 /* Services */,
+				D4F3F67122E6EF2D003BB6DA /* AccessToken.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +463,12 @@
 			isa = PBXGroup;
 			children = (
 				D4C40A6522E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift */,
+				D476110122E6504E00B038AE /* FetchAuthenticateToken.swift */,
+				D476110722E6543900B038AE /* AuthenticationCredentialsEndPoint.swift */,
+				D4F3F66D22E6E59A003BB6DA /* AuthenticationTokenApiContract.swift */,
+				D4F3F66F22E6E617003BB6DA /* AuthenticationTokenApi.swift */,
+				D48D793F22E840F400B9BE70 /* GetConstantTokenContract.swift */,
+				D48D794222E8414300B9BE70 /* GetConstantToken.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -504,6 +599,41 @@
 			path = UpDayUITests;
 			sourceTree = "<group>";
 		};
+		D4F3F67322E6F055003BB6DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D4F3F67422E6F092003BB6DA /* AuthenticationTokenInteractorContract.swift */,
+				D4F3F67622E6F0F3003BB6DA /* AuthenticationTokenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D4F3F67822E6F29A003BB6DA /* KeyChainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D4F3F67922E6F2A8003BB6DA /* DI */,
+				D4F3F67A22E6F2B3003BB6DA /* Model */,
+			);
+			path = KeyChainAccess;
+			sourceTree = "<group>";
+		};
+		D4F3F67922E6F2A8003BB6DA /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D4F3F67B22E6F2F1003BB6DA /* KeyChainAccessAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D4F3F67A22E6F2B3003BB6DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4F3F67D22E6F37E003BB6DA /* KeyChainAccessContract.swift */,
+				D4F3F67F22E6F4C3003BB6DA /* KeyChainAccess.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F947DDDD8E386A03BBBD8A81 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +757,7 @@
 				D4ECCC1522DB5E0C00968BDC /* Assets.xcassets in Resources */,
 				D4ECCC1022DB5E0900968BDC /* Main.storyboard in Resources */,
 				D4C40A6422E3AF3100B341C5 /* AuthenticationCredentials.plist in Resources */,
+				D47610F522E63B4200B038AE /* ApiEndPoints.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,12 +864,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F3F68022E6F4C3003BB6DA /* KeyChainAccess.swift in Sources */,
+				D476110622E6515D00B038AE /* ReadPListFile.swift in Sources */,
+				D47610F822E63C4E00B038AE /* ApiEndPoint.swift in Sources */,
 				D41A207B22DBC25C00058CD7 /* FetchPicturesApi.swift in Sources */,
 				D41A206322DB971400058CD7 /* ApplicationAssembly.swift in Sources */,
 				D432F14A22E1025900FA1FDE /* ImageCacheAssembly.swift in Sources */,
 				D4C40A6622E3B0D300B341C5 /* FetchAuthenticateTokenContract.swift in Sources */,
 				D400FFF922E0A3860028F51F /* FetchImageContract.swift in Sources */,
+				D47610FE22E640C900B038AE /* ApiEndPointProvider.swift in Sources */,
+				D4F3F67C22E6F2F1003BB6DA /* KeyChainAccessAssembly.swift in Sources */,
+				D47610FA22E63D8400B038AE /* URL+PathExtension.swift in Sources */,
+				D4F3F67222E6EF2D003BB6DA /* AccessToken.swift in Sources */,
 				D4ECCC0D22DB5E0900968BDC /* PicturesViewController.swift in Sources */,
+				D476110222E6504E00B038AE /* FetchAuthenticateToken.swift in Sources */,
 				D4C40A5822E3553E00B341C5 /* ShutterPictureAssembly.swift in Sources */,
 				D41A208322DBCE4300058CD7 /* FetchPicturesService.swift in Sources */,
 				D432F14F22E108EB00FA1FDE /* FetchImageInteractor.swift in Sources */,
@@ -755,18 +894,31 @@
 				D41A206D22DB9F2700058CD7 /* PicturesCollectionAssembly.swift in Sources */,
 				D4C40A4D22E33EC700B341C5 /* AuthenticationAssembly.swift in Sources */,
 				D41A207722DBA52300058CD7 /* ApiService.swift in Sources */,
+				D476110022E647AF00B038AE /* CommonAssembly.swift in Sources */,
+				D4F3F67722E6F0F3003BB6DA /* AuthenticationTokenInteractor.swift in Sources */,
 				D41A208522DBD0D400058CD7 /* JSONDecoderContract.swift in Sources */,
 				D400FFFB22E0A4C50028F51F /* FetchImage.swift in Sources */,
+				D476110822E6543900B038AE /* AuthenticationCredentialsEndPoint.swift in Sources */,
 				D432F14422E0FDE600FA1FDE /* ImageCache.swift in Sources */,
+				D4F3F67E22E6F37E003BB6DA /* KeyChainAccessContract.swift in Sources */,
+				D476110422E650EA00B038AE /* ReadPListFileContract.swift in Sources */,
 				D41A207922DBC05C00058CD7 /* ApiContract.swift in Sources */,
 				D41A208722DBD11400058CD7 /* JsonDecoder.swift in Sources */,
+				D48D794022E840F400B9BE70 /* GetConstantTokenContract.swift in Sources */,
+				D4F3F67022E6E617003BB6DA /* AuthenticationTokenApi.swift in Sources */,
 				D41A208122DBC91A00058CD7 /* PicturesList.swift in Sources */,
+				D4F3F66E22E6E59A003BB6DA /* AuthenticationTokenApiContract.swift in Sources */,
 				D432F14222E0FD1500FA1FDE /* ImageCacheContract.swift in Sources */,
 				D4ECCC0B22DB5E0900968BDC /* AppDelegate.swift in Sources */,
 				D4C40A5522E3522500B341C5 /* ShutterPictureViewController.swift in Sources */,
 				D41A207D22DBC2A700058CD7 /* FetchPicturesApiContract.swift in Sources */,
 				D4C40A6222E3580E00B341C5 /* ShutterPictureService.swift in Sources */,
+				D48D794322E8414300B9BE70 /* GetConstantToken.swift in Sources */,
 				D41EB42322DF79E600657D88 /* PicturesCollectionViewCell.swift in Sources */,
+				D47610FC22E63FF200B038AE /* ApiEndPointProviderContract.swift in Sources */,
+				D4F3F68422E70F5E003BB6DA /* FetchPicturesInteractor.swift in Sources */,
+				D4F3F68222E70F10003BB6DA /* FetchPicturesInteractorContract.swift in Sources */,
+				D4F3F67522E6F092003BB6DA /* AuthenticationTokenInteractorContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@
 import Foundation
 
 protocol ApiContract {
-    var path : String {get}
     func getUrl() -> URL?
     func isAuthenticationRequired() -> Bool
     func getQueryParameters(pageIndex:Int) -> [String:Any]?

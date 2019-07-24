@@ -9,7 +9,7 @@
 import UIKit
 
 struct FetchImage : FetchImageContract {
-    var apiService : ApiServiceContract!
+    let apiService : ApiServiceContract!
     
     init(apiService:ApiServiceContract) {
         self.apiService = apiService

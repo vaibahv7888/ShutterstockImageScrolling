@@ -47,14 +47,18 @@ struct ApiService : ApiServiceContract {
             return
         }
         
-        Alamofire.request(url, method: method, parameters: queryParameters, headers: httpHeaders)
+        Alamofire.request(url,
+                          method: method,
+                          parameters: queryParameters,
+                          encoding: self.getAPIEncoding(method: method),
+                          headers: httpHeaders)
             .validate()
             .response { response in
-                guard let data = response.data else {
+                guard let responseData = response.data else {
                     Completion(nil)
                     return
                 }
-                Completion(data)
+                Completion(responseData)
         }
     }
     
@@ -62,6 +66,14 @@ struct ApiService : ApiServiceContract {
         return Alamofire.request(url, method: .get).responseImage { response in
             guard let image = response.result.value else { return }
             completion(image)
+        }
+    }
+    
+    private func getAPIEncoding(method: HTTPMethod) -> ParameterEncoding {
+        if method == .post {
+            return JSONEncoding.default
+        } else {
+            return URLEncoding.default
         }
     }
 }
